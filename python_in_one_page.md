@@ -534,7 +534,29 @@ slice_obj = slice(start, end, spet)
 my_other_list[slice_obj]
 ```
 
+```python id="Z7YlfTaTJmRz" colab_type="code" colab={"base_uri": "https://localhost:8080/", "height": 34} outputId="7d59ff3d-7bb3-400d-d8e4-0d59cc9a7fa3"
+# Return a new sorted list from the items in iterable
+my_sorted_list = sorted([5, 4, 3, 2, 1])
+print(my_sorted_list)
+```
+
+```python id="BmNYzYCmLLpN" colab_type="code" colab={"base_uri": "https://localhost:8080/", "height": 34} outputId="fb6c7224-39ee-4531-d6fe-0919876c045b"
+my_reversed_list = reversed(my_sorted_list)
+print(list(my_reversed_list))
+```
+
+<!-- #region id="t_1xQ9iBAjug" colab_type="text" -->
+### Built-in Higher Order Functions
+**map** and **filter** functions
+
+
+<!-- #endregion -->
+
 ```python id="ShRfhx706it6" colab_type="code" colab={"base_uri": "https://localhost:8080/", "height": 34} outputId="4e819f24-9f92-4beb-ef6c-63727cad0e97"
+# The filter function tests every element in an iterable object 
+# with a function that returns either True or False, only keeping 
+# those which evaluates to True
+
 my_iterable = [ 1, 2, 3, 4, 5 ]
 
 def bigger_than_three(number):
@@ -545,6 +567,9 @@ print(list(output_list))
 ```
 
 ```python id="7KzRUtPrEdML" colab_type="code" colab={"base_uri": "https://localhost:8080/", "height": 34} outputId="b3f202c7-5998-43c7-c75a-94d0f54d7df5"
+# The map function allows us to apply a function to every element 
+# in an iterable object
+
 my_iterable = [ 1, 2, 3, 4, 5 ]
 
 def add_one(number):
@@ -552,17 +577,6 @@ def add_one(number):
 
 output_list = map(add_one, my_iterable)
 print(list(output_list))
-```
-
-```python id="Z7YlfTaTJmRz" colab_type="code" colab={"base_uri": "https://localhost:8080/", "height": 34} outputId="7d59ff3d-7bb3-400d-d8e4-0d59cc9a7fa3"
-# Return a new sorted list from the items in iterable
-my_sorted_list = sorted([5, 4, 3, 2, 1])
-print(my_sorted_list)
-```
-
-```python id="BmNYzYCmLLpN" colab_type="code" colab={"base_uri": "https://localhost:8080/", "height": 34} outputId="fb6c7224-39ee-4531-d6fe-0919876c045b"
-my_reversed_list = reversed(my_sorted_list)
-print(list(my_reversed_list))
 ```
 
 <!-- #region id="3xLBKzHLudHz" colab_type="text" -->
