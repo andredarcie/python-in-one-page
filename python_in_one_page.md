@@ -372,17 +372,20 @@ print(round(1.5))
 
 <!-- #region id="kJGDfVPs_3Y7" colab_type="text" -->
 ## 🆔 Identity
+
+Identity operators are used to compare the objects
 <!-- #endregion -->
 
-```python id="QURkrB-m_4wA" colab_type="code" colab={"base_uri": "https://localhost:8080/", "height": 34} outputId="d9827e50-45a4-4f9c-efd2-b333b18e4e96"
+```python id="QURkrB-m_4wA" colab_type="code" colab={"base_uri": "https://localhost:8080/", "height": 51} outputId="016df4d1-850c-413d-9c35-9e2b8bf43960"
 x = 'Hello'
 z = x
-y = 'World'
 
 print(x is z)
+print(x is not z)
 ```
 
-```python id="zG-0JuVK_9YQ" colab_type="code" colab={"base_uri": "https://localhost:8080/", "height": 34} outputId="028dba90-28a9-4bf2-f16d-e7b178e0107c"
+```python id="zG-0JuVK_9YQ" colab_type="code" colab={"base_uri": "https://localhost:8080/", "height": 34} outputId="3030ccf1-6f19-4912-80aa-950badc0f583"
+y = 'World'
 print(x is y)
 ```
 
