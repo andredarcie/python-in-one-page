@@ -899,7 +899,14 @@ print(isinstance(king_arthur, Knight))
 print(issubclass(Knight, Person))
 ```
 
+<!-- #region id="I0LJH541xLG2" colab_type="text" -->
+### Inheritance
+Inheritance allows us to define a class that inherits all the methods and properties from another class.
+<!-- #endregion -->
+
 ```python id="LVfun59I1CaO" colab_type="code" colab={}
+# Base class: Person
+# Derived class: Peasant
 class Peasant(Person):
     # Class attributes are attributes that have the 
     # same value for all class instances.
