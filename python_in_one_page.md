@@ -5,7 +5,7 @@ jupyter:
       extension: .md
       format_name: markdown
       format_version: '1.2'
-      jupytext_version: 1.5.2
+      jupytext_version: 1.6.0
   kernelspec:
     display_name: Python 3
     name: python3
@@ -577,6 +577,36 @@ def add_one(number):
 
 output_list = map(add_one, my_iterable)
 print(list(output_list))
+```
+
+<!-- #region id="IjUdD2ej2XPe" colab_type="text" -->
+### 💫 List Comprehensions
+List comprehensions are a way of making lists
+<!-- #endregion -->
+
+```python id="WWYSm8-j2jMa" colab_type="code" colab={"base_uri": "https://localhost:8080/", "height": 34} outputId="472cadf1-2dba-4e35-c0a5-6e299289bcc5"
+numbers = [number for number in range(5)]
+print(numbers)
+```
+
+```python id="cpNAX7sZ3SpL" colab_type="code" colab={"base_uri": "https://localhost:8080/", "height": 34} outputId="03afff2a-be16-4e7b-d918-36b8e258af1c"
+squares = [number * number for number in range(5)]
+print(squares)
+```
+
+```python id="1BcuhbmP30jG" colab_type="code" colab={"base_uri": "https://localhost:8080/", "height": 34} outputId="293430ff-3aa5-4dd4-e6a1-74c66e2e9afd"
+def square(number):
+  return number * number
+
+squares = [square(number) for number in range(5)]
+print(squares)
+```
+
+```python id="nufofFhN4oC_" colab_type="code" colab={"base_uri": "https://localhost:8080/", "height": 51} outputId="e71f24cd-af43-4095-f56f-ab7b93290330"
+numbers = list(range(10))
+even_numbers = [number for number in numbers if number % 2 == 0]
+print(numbers)
+print(even_numbers)
 ```
 
 <!-- #region id="3xLBKzHLudHz" colab_type="text" -->
@@ -1203,7 +1233,7 @@ globals()['my_iterable']
 ```
 
 <!-- #region id="tZ4X5puebsL2" colab_type="text" -->
-## Try Except
+## ❌ Try Except
 <!-- #endregion -->
 
 ```python id="A83gFZEkb0N1" colab_type="code" colab={"base_uri": "https://localhost:8080/", "height": 51} outputId="95e590bc-2b90-4a97-d5ec-6f5bc156f6ac"
@@ -1216,7 +1246,7 @@ finally:
 ```
 
 <!-- #region id="B2-qjeZAcKAQ" colab_type="text" -->
-## File Handling
+## 📁 File Handling
 <!-- #endregion -->
 
 ```python id="GxTK3GigcL-Q" colab_type="code" colab={}
